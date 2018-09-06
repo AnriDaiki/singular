@@ -1,0 +1,179 @@
+//@import "~bootstrap/scss/bootstrap";
+@import "header";
+@import "content";
+@import "footer";
+@import "media";
+
+@font-face {
+  font-family: 'PantonMtav3';
+  src: url('../fonts/PantonMtav3-Bold/PantonMtav3-Bold.eot');
+  src: url('../fonts/PantonMtav3-Bold/PantonMtav3-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PantonMtav3-Bold/PantonMtav3-Bold.woff2') format('woff2'),
+  url('../fonts/PantonMtav3-Bold/PantonMtav3-Bold.woff') format('woff'),
+  url('../fonts/PantonMtav3-Bold/PantonMtav3-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+$bg-color: #000;
+$main-color: #5a5a5a;
+$red-one: #d40100;
+$white-one: #ffffff;
+
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.align-center {
+  text-align: center;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+body {
+  background: $bg-color url("../images/bg1.jpg") no-repeat top center;
+  //background-attachment: fixed;
+  color: #7f7f7f;
+  font-size: 11px;
+  font-family: 'Arial', sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+/* INPUTS */
+.custom-input {
+  color: #5a5a5a;
+  font-size: 12px;
+  background: none;
+  border: none;
+  border-radius: 2px;
+  padding: 0 9px;
+  line-height: 26px;
+  position: relative;
+  z-index: 5;
+  width: 150px;
+}
+
+/*  Gradients  */
+.grayone {
+  position: relative;
+  border: 1px solid #030609;
+  box-shadow: 0px 1px 5px 0px rgba(255, 255, 255, 0.05), 0px 2px 5px 0px rgba(0, 0, 0, 1) inset;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 3px;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    z-index: 1;
+    opacity: 0.01;
+    border-radius: 3px;
+  }
+}
+
+.input-group {
+  position: relative;
+  display: inline-table !important;
+  border-collapse: separate;
+  width: 150px;
+  .custom-input {
+    display: table-cell;
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    width: 1%;
+    vertical-align: middle;
+    display: table-cell;
+    z-index: 2;
+    button {
+      z-index: 2;
+    }
+  }
+}
+
+.grayonebutton {
+  position: relative;
+  line-height: 24px;
+  padding: 0 15px;
+  border-radius: 2px;
+  color: #7f7f7f;
+  font-size: 11px;
+  background: #212121;
+  border: none;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 55, 0.2);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    opacity: 0.02;
+    border-radius: 2px;
+  }
+  &:hover {
+    color: #fff;
+    background: #d40100;
+  }
+}
+
+.redonetbutton {
+  position: relative;
+  line-height: 24px;
+  padding: 0 15px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 11px;
+  background: #d40100;
+  border: none;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.39) , 0px 1px 0px 0px rgba(255, 255, 255, 0.11) inset;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    opacity: 0.05;
+    border-radius: 2px;
+  }
+  &:hover {
+    color: #fff;
+    background: #b41514;
+  }
+}

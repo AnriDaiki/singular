@@ -1,0 +1,35 @@
+{
+  "name": "singulartask",
+  "version": "1.0.0",
+  "description": "Singular Task",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnriDaiki/singularTask.git"
+  },
+  "author": "Anri Daiki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnriDaiki/singularTask/issues"
+  },
+  "homepage": "https://github.com/AnriDaiki/singularTask/#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.1.4",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^2.0.0",
+    "node-sass": "^4.9.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1"
+  }
+}

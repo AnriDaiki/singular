@@ -1,0 +1,406 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel='stylesheet' href='dist/style.css'>
+</head>
+<body>
+
+<!-- MAIN WRAPPER -->
+<main id="wrapper">
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container">
+            <div class="header-in">
+
+                <!-- IMAGE LOGO -->
+                <div id="logo">
+                    <div class="logo-in">
+                        <!-- ფონტი ვერ ვიპოვე და სურათად ჩავსვი -->
+                        <a href="#">
+                            <img src="src/images/logo.png" alt="Casino"/>
+                        </a>
+                    </div>
+                </div>
+                <!-- TOP RIGHT MENU -->
+                <div id="top-menu">
+                    <div class="top-menu-in">
+                        <form class="">
+
+                            <div class="grayone">
+                                <input type="text" class="custom-input" id="username" placeholder="User Name">
+                            </div>
+
+                            <div class="input-group grayone">
+                                <input type="password" class="custom-input" id="password"
+                                       placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                                <div class="input-group-btn">
+                                    <button class="grayonebutton" type="submit">SMS</button>
+                                </div>
+                            </div>
+
+                            <button class="grayonebutton">Login</button>
+                            <button class="redonetbutton">Register</button>
+
+                            <button class="grayonebutton">ENG</button>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav id="nav">
+        <div class="container">
+            <div class="nav-in">
+                <ul class="navigation-list">
+                    <li class="nav-item active"><a href="#"><span>Sports</span></a></li>
+                    <li class="nav-item"><a href="#"><span>Poker</span></a></li>
+                    <li class="nav-item"><a href="#"><span>Live Casino</span></a></li>
+                    <li class="nav-item"><a href="#"><span>Slots</span></a></li>
+                    <li class="nav-item"><a href="#"><span>Table Games</span></a></li>
+                    <li class="nav-item"><a href="#"><span>Skill Games</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <section id="content">
+        <div class="container">
+            <div class="content">
+
+                <!-- TABS SECTION -->
+                <section id="tabs">
+
+                    <ul class="tabs-header">
+                        <li class="tab-item active" onclick="changeTab(1 , this )"><a
+                                href="javascript:void(0);"><span>Balance Management</span></a></li>
+                        <li class="tab-item" onclick="changeTab(2 , this )"><a href="javascript:void(0);"><span>Transaction History</span></a>
+                        </li>
+                        <li class="tab-item"><a href="#"><span>Account details</span></a></li>
+                        <li class="tab-item"><a href="#"><span>Access log</span></a></li>
+                        <li class="tab-item"><a href="#"><span>Promotions</span></a></li>
+                        <li class="tab-item"><a href="#"><span>Massaging</span></a></li>
+                    </ul>
+
+                    <div class="tab-content">
+
+                        <div id="tab_1" class="tab-content-item activetab">
+
+                            <div class="sub-tab">
+                                <ul class="sub-tab-list">
+                                    <li class="sub-tab-item active"><span>Cashier</span></li>
+                                    <li class="sub-tab-item"><span>Deposit</span></li>
+                                    <li class="sub-tab-item"><span>Withdraw</span></li>
+                                    <li class="sub-tab-item"><span>Card Management</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="table-head">
+                                Account info
+                            </div>
+
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>Username:</td>
+                                    <td colspan="2">Username</td>
+                                </tr>
+                                <tr>
+                                    <td>User ID:</td>
+                                    <td colspan="2">8500</td>
+                                </tr>
+                                <tr>
+                                    <td>ID Verification:</td>
+                                    <td colspan="2">
+                                        Verified
+                                        <span class="verified"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Communication Language:</td>
+                                    <td class="editbutton">ENG</td>
+                                    <td class="editbutton">
+                                        <button onclick="alert('Edit buttton');" class="grayonebutton"><i
+                                                class="fas fa-pencil-alt"></i>EDIT
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Status:</td>
+                                    <td colspan="2">Registrated</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <div id="tab_2" class="tab-content-item">
+
+                            <div class="sub-tab">
+                                <ul class="sub-tab-list">
+                                    <li class="sub-tab-item"><span>Cashier</span></li>
+                                    <li class="sub-tab-item active"><span>Deposit</span></li>
+                                    <li class="sub-tab-item"><span>Withdraw</span></li>
+                                    <li class="sub-tab-item"><span>Card Management</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="table-head">
+                                Deposit History
+                            </div>
+
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>Username:</td>
+                                    <td colspan="2">AnriDaiki</td>
+                                </tr>
+                                <tr>
+                                    <td>User ID:</td>
+                                    <td colspan="2">6502</td>
+                                </tr>
+                                <tr>
+                                    <td>ID Verification:</td>
+                                    <td colspan="2">
+                                        Unverified
+                                        <span class="unverified"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Communication Language:</td>
+                                    <td class="editbutton">RUS</td>
+                                    <td class="editbutton">
+                                        <button onclick="alert('Edit buttton');" class="grayonebutton"><i
+                                                class="fas fa-pencil-alt"></i>EDIT
+                                        </button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- DOCUMENTS SECTION -->
+                <section id="documents">
+
+                    <div class="table-head">
+                        <div class="table-head-in">
+                            ID document
+                        </div>
+
+                        <div class="table-head-buttons">
+                            <button class="bigbutton"><i class="fas fa-plus"></i>Add New Document</button>
+                            <button class="bigbutton"><i class="fas fa-question"></i>Indtruction</button>
+                        </div>
+
+                    </div>
+
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Country</th>
+                            <th>Date Modified</th>
+                            <th>Document type</th>
+                            <th>Document #</th>
+                            <th>Personal ID</th>
+                            <th>Status</th>
+                            <th>Document copy</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Georgia</td>
+                            <td>31--1-2-15</td>
+                            <td>Personal ID</td>
+                            <td>999988775555</td>
+                            <td>09998877666</td>
+                            <td>Verified</td>
+                            <td>
+                                <button class="redonetbutton">Update</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Georgia</td>
+                            <td>31--1-2-15</td>
+                            <td>Personal ID</td>
+                            <td>999988775555</td>
+                            <td>09998877666</td>
+                            <td>Unverified</td>
+                            <td>
+                                <button class="redonetbutton">Update</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Georgia</td>
+                            <td>31--1-2-15</td>
+                            <td>Personal ID</td>
+                            <td>999988775555</td>
+                            <td>09998877666</td>
+                            <td>Verified</td>
+                            <td>
+                                <button class="redonetbutton">Update</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- CONTACT DETAILS SECTION -->
+                <section id="contact-details">
+
+                    <div class="table-head">
+                        Contact details
+                    </div>
+
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>E-mail:</td>
+                            <td>
+                                <div class="grayone">
+                                    <input type="text" class="custom-input" id="emailadress"
+                                           placeholder="New Email Adress">
+                                </div>
+                                <button class="redonetbutton">OK</button>
+                                <button class="grayonebutton">Cancel</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>User ID:</td>
+                            <td class="editbutton">
+
+                                <span>
+                                +995599538884
+                                </span>
+
+                                <button onclick="alert('Edit buttton');" class="grayonebutton"><i
+                                        class="fas fa-pencil-alt"></i>EDIT
+                                </button>
+
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer">
+
+                <!-- FOOTER TOP -->
+                <div class="footer-top">
+                    <div class="footer-top-item">
+                        <div class="left">
+
+                            <ul class="footer-menu">
+                                <li><a href="#"><span>News</span></a></li>
+                                <li><a href="#"><span>About us</span></a></li>
+                                <li><a href="#"><span>Rules</span></a></li>
+                                <li><a href="#"><span>Terms & Conditions</span></a></li>
+                                <li><a href="#"><span>Security</span></a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="right">
+                            <span class="circle">+18</span>
+                            <span class="circle">+21</span>
+                            <span class="circle">RGB</span>
+                        </div>
+
+                    </div>
+                    <div class="footer-top-item socials">
+                        <div class="left">
+
+                            <ul class="footer-menu">
+                                <li><a href="#" style="color: #2c3f6e;"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#" style="color: #225d70;"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#" style="color: #902d22;"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#" style="color: #8a191c;"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#" style="color: #284767;"><i class="fab fa-vk"></i></a></li>
+                                <li><a href="#" style="color: #8c4e1e;"><i class="fab fa-odnoklassniki"></i></a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="right">
+                            <span class="mobnumber"><span>+995 32</span> 2711011</span>
+                            <span class="mobnumber"><span>+995 32</span> 2364360</span>
+                        </div>
+                    </div>
+                    <div class="footer-top-item">
+                        <ul class="footer-menu">
+                            <li>
+                                <a href="#">
+                                    <img src="./src/images/partner1.png" alt="Partner"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./src/images/partner2.png" alt="Partner"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./src/images/partner3.png" alt="Partner"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- FOOTER BOTTOM -->
+                <div class="footer-bottom">
+                    <div class="footer-bottom-top">
+                        Electronic games (Internet) is operated by "Geobet" LTD (license #19-06/072, Permit term until
+                        26.12.2017) 26 May Square #1, Tbilisi Internet Bookmaking is operated by Contrast+"LTD (license
+                        #19-05/009, Permit term until 01.02.2017) 26 May Square #1, Tbilisi Hitman and Lara Croft: Tomb
+                        Raider are trademarks of Square Enix Ltd. All rights reserved SHOOT!:© 2012 Rodston Ltd
+                        <br>
+                        <br>
+                        THE DARK KNIGHT RISES and all related characters and elements are trademarks of and © DC
+                        Comics.(s13)
+                    </div>
+                    <div class="footer-bottom-bottom">
+                        <div class="left">
+                            <span class="copy">
+                               © Casino. All rights reserved.
+                            </span>
+                        </div>
+                        <div class="right">
+                            <a href="#" class="dev">
+                                <span>Created by:</span>
+                                <img src="./src/images/singular.png" alt="Singular"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</main>
+
+<script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+</html>
