@@ -1,2 +1,4 @@
 # singularTask
-Singular Task
+
+# npm install
+# npm run build
